@@ -23,3 +23,5 @@ RUN apk --no-cache update && apk add --no-cache \
     && rm -rf /var/cache/apk/* \
     && python3 -m ensurepip \
     && pip3 install --no-cache --upgrade pip setuptools
+
+CMD tail -f /dev/null
